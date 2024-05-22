@@ -5,10 +5,10 @@ const GITHUB_URL = process.env.REACT_APP_GITHUB_URL;
 const GITHUB_TOKKEN = process.env.REACT_APP_GITHUB_TOKKEN;
 
 const github = axios.create({
-    baseURL: 'https://api.github.com',
-    headers: {
-        Authorization: `token ${GITHUB_TOKKEN}`
-    }
+    baseURL: `https://api.github.com`,
+    // headers: {
+    //     Authorization: `token ${GITHUB_TOKKEN}`
+    // }
 })
 
 
